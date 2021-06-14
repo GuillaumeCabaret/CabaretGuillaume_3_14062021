@@ -1,0 +1,14 @@
+.localisation {
+    display: flex;
+    justify-content: center;
+    padding: $appPadding;
+    background-color: rgb(243, 243, 243);
+    font-size: 1.2rem;
+    position: relative;
+    &_icon {
+        margin-right: 1em;
+    }
+    &_text {
+        font-weight: 700;
+    }
+}
