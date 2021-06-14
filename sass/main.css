@@ -71,4 +71,66 @@ html {
   color: inherit;
 }
 
+.tutorial {
+  padding: 2rem 1rem;
+}
+.tutorial_title {
+  margin-top: 0;
+}
+.tutorial_steps {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: compteListe;
+}
+@media (min-width: 64rem) {
+  .tutorial_steps {
+    display: flex;
+  }
+}
+.tutorial_step {
+  padding: 1.5rem;
+  margin: 1rem 0 1rem 0.75rem;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+  border-radius: 1.25rem;
+  background-color: #f6f6f6;
+  display: flex;
+  position: relative;
+  font-weight: 700;
+}
+@media (min-width: 64rem) {
+  .tutorial_step {
+    flex: 1;
+    margin: 0;
+    margin-left: 2rem;
+  }
+  .tutorial_step:first-child {
+    margin-left: 0.75rem;
+  }
+}
+.tutorial_step:first-child {
+  margin-top: 0;
+}
+.tutorial_step:last-child {
+  margin-bottom: 0;
+}
+.tutorial_step::before {
+  counter-increment: compteListe 1;
+  content: counter(compteListe) " ";
+  background: #9356DC;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  left: -1rem;
+}
+.tutorial_icon {
+  margin-right: 1rem;
+  color: #7e7e7e;
+}
+
 /*# sourceMappingURL=main.css.map */
