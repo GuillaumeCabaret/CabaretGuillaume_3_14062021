@@ -12,3 +12,19 @@
         font-weight: 700;
     }
 }
+
+.find {
+    padding: 2rem;
+    text-align: center;
+    background-color: rgb(250, 250, 250);
+    &_mainTitle {
+        margin: 0;
+    }
+    &_subtitle {
+        font-weight: 300;
+        margin: 1.5rem 0;
+    }
+    &_button {
+        @include button(primary);
+    }
+}

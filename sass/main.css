@@ -3,7 +3,6 @@ body,
 html {
   margin: 0;
   font-family: "Roboto", sans-serif;
-  scroll-behavior: smooth;
 }
 
 .container {
@@ -36,6 +35,40 @@ html {
 }
 .localisation_text {
   font-weight: 700;
+}
+
+.find {
+  padding: 2rem;
+  text-align: center;
+  background-color: #fafafa;
+}
+.find_mainTitle {
+  margin: 0;
+}
+.find_subtitle {
+  font-weight: 300;
+  margin: 1.5rem 0;
+}
+.find_button {
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border-radius: 100px;
+  color: white;
+  background-color: #686868;
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9) 0%, rgba(255, 121, 218, 0.9) 100%);
+  cursor: pointer;
+  transition-duration: 0.25s;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+}
+.find_button:hover {
+  background-color: white;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+}
+.find_button a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /*# sourceMappingURL=main.css.map */
