@@ -37,19 +37,19 @@ html {
   font-weight: 700;
 }
 
-.find {
+.explore {
   padding: 2rem;
   text-align: center;
   background-color: #fafafa;
 }
-.find_mainTitle {
+.explore_mainTitle {
   margin: 0;
 }
-.find_subtitle {
+.explore_subtitle {
   font-weight: 300;
   margin: 1.5rem 0;
 }
-.find_button {
+.explore_button {
   border: 0;
   padding: 0.75rem 1.5rem;
   font-weight: 500;
@@ -62,11 +62,11 @@ html {
   transition-duration: 0.25s;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
 }
-.find_button:hover {
+.explore_button:hover {
   background-color: white;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
 }
-.find_button a {
+.explore_button a {
   text-decoration: none;
   color: inherit;
 }
@@ -131,6 +131,73 @@ html {
 .tutorial_icon {
   margin-right: 1rem;
   color: #7e7e7e;
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+  padding: 2rem 1rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 1rem;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.card__img {
+  height: 12rem;
+  width: 100%;
+  border: transparent solid 0px;
+  border-radius: 1rem 1rem 0 0;
+  box-shadow: none;
+  object-fit: cover;
+}
+.card__badge {
+  background-color: #99E2D0;
+  color: #1b6150;
+  padding: 0.5rem;
+  border-radius: 0.125rem;
+  position: absolute;
+  top: 1rem;
+  right: 0.75rem;
+}
+.card__footer {
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.card__content {
+  flex: 1;
+}
+.card__title {
+  margin: 0;
+  margin-bottom: 0.25rem;
+}
+.card__subtitle {
+  margin: 0;
+}
+.card__btn {
+  height: 2rem;
+  width: 2rem;
+  background-color: transparent;
+  border: transparent 0px solid;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card__like {
+  background-color: white !important;
 }
 
 /*# sourceMappingURL=main.css.map */
