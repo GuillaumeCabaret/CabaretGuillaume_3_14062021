@@ -241,4 +241,21 @@ html {
   background-color: white !important;
 }
 
+.header--withBackArrow {
+  position: relative;
+}
+.header__arrow {
+  position: absolute;
+  left: 2rem;
+  height: 2rem;
+  width: 2rem;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: black;
+}
+
 /*# sourceMappingURL=main.css.map */
