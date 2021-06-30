@@ -6,9 +6,154 @@ html {
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1920px;
   margin: auto;
   position: relative;
+}
+
+.loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  animation: loader 0.01s;
+  animation-delay: 1.75s;
+  animation-fill-mode: both;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.loader_ingredient {
+  animation: jump 1s;
+  position: relative;
+  transform: translateY(-600px);
+}
+.loader_seed {
+  background-color: #373737;
+  border-radius: 100%;
+  height: 4px;
+  left: 14%;
+  position: absolute;
+  top: 30%;
+  width: 4px;
+}
+.loader_seed:nth-child(2) {
+  left: 45%;
+  top: 10%;
+}
+.loader_seed:nth-child(3) {
+  left: 10%;
+  top: 70%;
+}
+.loader_seed:nth-child(4) {
+  left: 27%;
+  top: 52%;
+}
+.loader_seed:nth-child(5) {
+  left: 70%;
+  top: 17%;
+}
+.loader_seed:nth-child(6) {
+  left: 45%;
+  top: 80%;
+}
+.loader_seed:nth-child(7) {
+  left: 82%;
+  top: 65%;
+}
+.loader_seed:nth-child(8) {
+  left: 60%;
+  top: 59%;
+}
+.loader_bread-top {
+  animation: jump 1s;
+  animation-delay: 0.5s, 0s;
+  background: #fb9354;
+  border-radius: 120px 120px 5px 5px;
+  border: 4px solid #373737;
+  box-shadow: inset -15px 0 #EA5B42;
+  height: 45px;
+  margin: 0 auto;
+  max-width: 25%;
+  overflow: hidden;
+  position: relative;
+  width: 140px;
+}
+.loader_salad {
+  animation: jump 1s;
+  animation-delay: 0.4s, 0.1s;
+  background: #41B24C;
+  border-radius: 20px;
+  border: 4px solid #373737;
+  box-shadow: inset -25px 0 #399943;
+  height: 13px;
+  margin: 0 auto;
+  max-width: 25%;
+  width: 160px;
+}
+.loader_bacon {
+  animation: jump 1s;
+  animation-delay: 0.3s, 0.2s;
+  background: linear-gradient(#bf3813, #c45e38);
+  border-radius: 13px;
+  border: 4px solid #373737;
+  box-shadow: inset -15px 0 #ad3615;
+  height: 11px;
+  margin: 0 auto;
+  max-width: 25%;
+  position: relative;
+  width: 140px;
+}
+.loader_bacon:before {
+  background-color: #eee;
+  box-shadow: inset -15px 0 #ccc;
+  content: "";
+  height: 15%;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+.loader_cheese {
+  animation: jump 1s;
+  animation-delay: 0.2s, 0.3s;
+  background: #fcd816;
+  border-radius: 20px;
+  border: 4px solid #373737;
+  box-shadow: inset -18px 0 #d1b311;
+  height: 13px;
+  margin: 0 auto;
+  max-width: 25%;
+  width: 150px;
+}
+.loader_meat {
+  animation: jump 1s;
+  animation-delay: 0.1s, 0.4s;
+  background: #852505;
+  border-radius: 30px;
+  border: 4px solid #373737;
+  box-shadow: inset -15px 0 #722207;
+  height: 17px;
+  margin: 0 auto;
+  max-width: 25%;
+  width: 140px;
+}
+.loader_bread-bottom {
+  animation: jump 1s;
+  background: #fb9354;
+  border-radius: 5px 5px 50px 50px;
+  border: 4px solid #373737;
+  box-shadow: inset -15px 0 #EA5B42;
+  height: 27px;
+  margin: 0 auto;
+  max-width: 25%;
+  overflow: hidden;
+  width: 140px;
 }
 
 .localisation {
@@ -52,6 +197,10 @@ html {
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
 }
 .explore_button:hover {
+  background-color: white;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+}
+.explore_button:active {
   background-color: white;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
 }
@@ -115,7 +264,7 @@ html {
   align-items: center;
   color: white;
   position: absolute;
-  left: -1rem;
+  left: -0.7rem;
 }
 .tutorial_icon {
   margin-right: 1rem;
@@ -132,6 +281,11 @@ html {
   grid-template-columns: repeat(1, 1fr);
   column-gap: 2rem;
   row-gap: 2rem;
+}
+@media (min-width: 64rem) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .card {
@@ -436,6 +590,10 @@ html {
   background-color: white;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
 }
+.commandBtn:active {
+  background-color: white;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+}
 .commandBtn a {
   text-decoration: none;
   color: inherit;
@@ -452,6 +610,12 @@ html {
   margin-left: 5.5em;
 }
 
+@media (min-width: 64rem) {
+  .header_logo {
+    width: 200px;
+    margin-left: 45%;
+  }
+}
 .footer {
   background-color: #353535;
 }
@@ -501,6 +665,26 @@ html {
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(0.5rem);
+  }
+  75% {
+    transform: translateY(-0.5rem);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 
