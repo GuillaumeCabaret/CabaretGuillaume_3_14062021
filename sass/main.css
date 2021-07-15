@@ -316,7 +316,7 @@ html {
   top: 1rem;
   right: 0.75rem;
 }
-.card__footer {
+.card__article {
   padding: 1rem;
   position: relative;
   display: flex;
